@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="HUDContainer" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="EverPresentHUD" style="flex-grow: 0; flex-shrink: 0; width: 15%; height: 100%;">
+            <ui:VisualElement name="HeartContainer" style="flex-grow: 0; width: 100%; height: 15%; opacity: 1; display: flex; background-color: rgba(0, 0, 0, 0); flex-direction: row-reverse; justify-content: space-around; align-items: center; flex-shrink: 0; align-self: flex-start;">
+                <ui:VisualElement name="Heart1" style="flex-grow: 0; flex-shrink: 0; background-color: rgb(194, 134, 7); width: 30px; height: 30px;" />
+                <ui:VisualElement name="Heart2" style="flex-grow: 0; flex-shrink: 0; background-color: rgb(194, 134, 7); width: 30px; height: 30px;" />
+                <ui:VisualElement name="Heart3" style="flex-grow: 0; flex-shrink: 0; background-color: rgb(194, 134, 7); width: 30px; height: 30px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="LabelContainer" style="flex-grow: 0; width: 100%; height: 10%; opacity: 1; display: flex; background-color: rgba(0, 0, 0, 0); flex-direction: column; justify-content: flex-end; align-items: center; flex-shrink: 0;">
+                <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="scoreText" text="Score: 0" style="-unity-text-align: upper-left; color: rgb(194, 134, 7); font-size: 30px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="CountdownContainer" style="flex-grow: 0; flex-shrink: 0; width: 70%; height: 40%; flex-direction: column-reverse; align-items: center; justify-content: center;">
+            <ui:Label tabindex="-1" text="Countdown:&lt;br&gt;3" parse-escape-sequences="true" display-tooltip-when-elided="true" name="countdownText" style="width: auto; height: auto; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; font-size: 90px; color: rgb(194, 134, 7); -unity-text-align: upper-center; background-color: rgba(0, 0, 0, 0); border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); -unity-text-outline-color: rgb(0, 0, 0); -unity-text-outline-width: 0; align-self: center;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="LevelContainer" style="flex-grow: 1; width: 15%; height: 25%; align-items: center; justify-content: flex-end;">
+            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="levelText" text="Score: 0" style="-unity-text-align: upper-left; color: rgb(194, 134, 7); font-size: 30px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
